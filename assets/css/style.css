@@ -1,0 +1,945 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(16, 157, 212);
+    font-weight: 510;
+    background-color: whitesmoke;
+    margin: 0px; 
+    padding: 0px;
+}
+
+.header {
+    display: inline;
+}
+
+header h1::first-letter {
+    font-size: 50px;
+    font-weight: bold;
+    color: gold;
+}
+
+header h1 {
+    color: rgb(15, 228, 228);
+}
+
+.cite {
+    color: gold;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+p cite {
+    color: orange;
+}
+
+.city {
+    font-size: 30px;
+    color: rgb(255, 187, 0);
+    font-family: 'Times New Roman', sans-serif;
+    font-weight: bolder;
+}
+
+.profile header {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#jumbotron { 
+   font-size: 20px;
+   padding: 49px;
+   background-image: url('../image/about.png');
+   text-align: center;
+   color: white;
+   overflow: auto;
+}
+
+.blue {
+    color: rgb(27, 209, 255);
+}
+
+li#menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+nav {
+    background-color: rgb(9, 134, 172); /* OPSI 2 #00a2c6; */
+    width: 100%;
+    padding: 5px;
+    color: whitesmoke;
+    font-size: 20px;
+    position: sticky;
+    top: 0;
+    display: -webkit-inline-flex;
+}
+
+.navigasi {
+    float: left;
+    width: 90%;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+nav a:link {
+    color: whitesmoke;
+}
+
+nav a:visited {
+    color: whitesmoke;
+}
+nav a:hover {
+    color: rgb(255, 222, 132)
+}
+
+nav a:active {
+    color: rgb(255, 196, 161);
+}
+
+.logo-nav {
+    float: right;
+    width: 10%;
+    width: 70px;
+    object-fit: contain;
+}
+
+.button {
+    background-color: rgb(60, 13, 148);
+    padding: 7px;
+    padding-left: 17px;
+    padding-right: 17px;
+    margin-left: 10px;
+    border-radius: 30px;
+}
+
+#menuBars, .sideNav, .closeBars, .container, .nav2 {
+    display: none;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+#containerSejarah {
+    float: left;
+    width: 75%;
+}
+
+@media screen and (max-width: 1000px) {
+    #containerSejarah {
+        width: 100%;
+        padding: 0;
+        margin-left: auto;
+    }
+}
+
+#containerAbout {
+    float: left;
+    width: 75%;
+}
+
+@media screen and (max-width: 1000px) {
+    #containerAbout {
+        width: 100%;
+        padding: 0;
+        margin-left: auto;
+    }
+}
+
+#content {
+    float: center;
+    width: 100%;
+    overflow: auto;
+}
+
+#container-berita {
+    float: left;
+    width: 100%;
+    overflow: auto;
+}
+
+#berita1 {
+    float: left;
+    width: 50%;
+    overflow: auto;
+    padding-bottom: 80px;
+}
+
+#berita2 {
+    float: right;
+    width: 45%;
+    overflow: auto;
+
+}
+
+@media screen and (max-width: 1000px) {
+    #container-berita{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #berita1 {
+        float: left;
+        width: 100%;
+        padding: 0;
+        overflow: auto;
+    }
+
+    #berita2 {
+        float: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    .berita-image {
+        object-fit: cover;
+        object-position: right;
+    
+    }
+}
+
+
+.berita1-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: right;
+
+}
+
+.berita2-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.judulBerita{
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+
+.judulStarting{
+    background-color: rgb(79, 3, 141);
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 10px;
+    width: 700px;
+    border-radius: 70px;
+    color: cyan;
+}
+
+.subjudul {
+    color: orange;
+    font-style: italic;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+.textberita {
+    padding: 10px;
+}
+
+.newscard {
+    box-shadow: 0 1px 8px 0 rgb(0, 195, 255);
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+#container-starting {
+    overflow: auto;
+    width: 100%;
+}
+
+#judulKiper {
+    background-color: rgb(255, 218, 8);
+    color: rgb(107, 9, 199);
+    font-style: italic;
+    font-weight: bold;
+    max-width: 200px;
+    padding: 5px;
+    text-align: center;
+    overflow: auto;
+}
+
+#judulDefender {
+    background-color: rgba(0, 128, 43, 0.87);
+    color: rgb(251, 255, 0);
+    font-style: italic;
+    max-width: 200px;
+    padding: 5px;
+    text-align: center;
+    overflow: auto;
+}
+
+#judulMidfielder {
+    background-color: rgba(0, 54, 201, 0.87);
+    color: rgb(251, 255, 0);
+    font-style: italic;
+    max-width: 200px;
+    padding: 5px;
+    text-align: center;
+    overflow: auto;
+}
+
+#judulStriker {
+    background-color: crimson;
+    color: rgb(251, 255, 0);
+    font-style: italic;
+    max-width: 185px;
+    padding: 5px;
+    text-align: center;
+    overflow: auto;
+}
+
+#container-kiper {
+    overflow: auto;
+    height: 570px;
+    box-shadow: 0px 0px 1px 8px rgb(235, 200, 4);
+    background-color: rgb(231, 150, 0);
+    margin-bottom: 100px;
+}
+
+#container-back {
+    overflow: auto;
+    height: 570px;
+    box-shadow: 0px 0px 1px 8px rgb(0, 161, 54);
+    background-color: darkgreen;
+    margin-bottom: 100px;
+}
+
+.defender {
+    display: flex;
+    flex-direction: column;
+    background-color: gold;
+    width: 1250px;
+    height: 350px;
+    padding: 20px;
+}
+
+#container-midfielder {
+    overflow: auto;
+    height: 570px;
+    box-shadow: 0px 0px 1px 8px rgb(0, 60, 255);
+    background-color: darkblue;
+    margin-bottom: 100px;
+}
+
+.midfielder {
+    display: flex;
+    flex-direction: column;
+    background-color: gold;
+    width: 1250px;
+    height: 350px;
+    padding: 20px;
+}
+
+#container-striker {
+    overflow: auto;
+    height: 570px;
+    box-shadow: 0px 0px 1px 8px crimson;
+    background-color: rgb(156, 0, 31);
+}
+
+.striker {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: gold;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.kiperBox {
+    background-color: #00ccff;
+    padding: 30px;
+    padding-bottom: 10px;
+    border: 5px solid rgb(25, 245, 227);
+    box-shadow: 5px 7px 10px 1px rgb(73, 10, 189);
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.defenderBox {
+    background-color: #00ccff;
+    padding: 30px;
+    padding-bottom: 10px;
+    border: 5px solid rgb(25, 245, 227);
+    box-shadow: 5px 7px 10px 1px rgb(73, 10, 189);
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.midfielderBox {
+    background-color: #00ccff;;
+    padding: 30px;
+    padding-bottom: 10px;
+    border: 5px solid rgb(25, 245, 227);
+    box-shadow: 5px 7px 10px 1px rgb(73, 10, 189);
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.captainBox {
+    background-color: #00ccff;
+    width: 300px;
+    border: 5px solid rgb(25, 245, 227);
+    box-shadow: 5px 7px 10px 1px rgb(73, 10, 189);
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.captain { 
+    background-color: rgb(255, 238, 0);
+    width: 30px;
+    margin-top: 1px;
+    margin-left: 1px;
+    border-radius: 100px;
+}
+
+.forwardBox {
+    background-color: #00ccff;
+    margin: 5px;
+    padding: 30px;
+    padding-bottom: 10px;
+    border: 5px solid rgb(25, 245, 227);
+    box-shadow: 5px 7px 10px 1px rgb(73, 10, 189);
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.profileBox {
+    background-color: #00ccff;
+    margin: 5px;
+    margin-bottom: 80px;
+    padding: 30px;
+    border: 5px solid rgb(25, 245, 227);
+    box-shadow: 0px 7px 17px 5px #ffabab;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.nama {
+    font-weight: 1000;
+    color: gold;
+    text-align: center;
+    font-size: 20px;
+}
+
+.nomor {
+    font-weight: 700;
+    color: rgb(73, 10, 189);
+    font-size: 30px;
+}
+
+.namaCaptain {
+    font-weight: 1000;
+    color: gold;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+.nomorCaptain {
+    font-weight: 700;
+    color: rgb(73, 10, 189);
+    font-size: 30px;
+}
+
+.captain-image {
+    width: 220px;
+    height: 220px;
+    margin-top: 34px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 120px;
+    background-color: rgb(72, 4, 180);
+
+}
+
+.player-image {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 120px;
+    background-color: rgb(72, 4, 180);
+
+}
+
+.jaydane-image {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 120px;
+    background-color: rgb(72, 4, 180);
+
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    .judulStarting{
+        background-color: rgb(79, 3, 141);
+        margin: auto;
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        color: cyan;
+    }
+
+    #container-kiper {
+        overflow: auto;
+        width: 100%;
+        height: 550px;
+        box-shadow: -5px -4px 1px 5px rgb(255, 251, 0);
+        background-color: orange;
+        margin-bottom: 100px;
+    }
+    
+    #container-back {
+        overflow: auto;
+        width: 100%;
+        height: 570px;
+        box-shadow: -3px -5px 1px 3px rgba(14, 168, 66, 0.87);
+        background-color: darkgreen;
+        margin-bottom: 100px;
+    }
+
+    .defender {
+        display: flex;
+        flex-direction: column;
+        background-color: gold;
+        width: 1390px;
+        height: 350px;
+        margin-left: auto;
+        padding: 20px;
+    }
+    
+    #container-midfielder {
+        overflow: auto;
+        width: 100%;
+        height: 570px;
+        box-shadow: -3px -5px 1px 3px rgb(0, 60, 255);
+        background-color: darkblue;
+        margin-bottom: 100px;
+    }
+
+    .midfielder {
+        display: flex;
+        flex-direction: column;
+        background-color: gold;
+        width: 1387px;
+        height: 350px;
+        margin-left: auto;
+        padding: 20px;
+    }
+    
+    #container-striker {
+        overflow: auto;
+        width: 100%;
+        height: 570px;
+        box-shadow: -3px -5px 1px 3px crimson;
+        background-color: rgb(156, 0, 31);
+        margin-bottom: 0px;
+    }
+
+    .striker {
+        display: flex;
+        flex-direction: column;
+        width: 700px;
+        background-color: gold;
+        height: 350px;
+        margin-left: auto;
+        padding: 20px;
+    }
+
+    .defenderBox {
+        background-color: #00ccff;
+        margin: 5px;
+        padding: 30px;
+        border: 5px solid rgb(25, 245, 227);
+        box-shadow: 5px 7px 10px 1px rgb(73, 10, 189);
+        border-radius: 5px;
+        margin-left: auto;
+        margin-right: 56px;
+        margin-bottom: 40px;
+        cursor: pointer;
+    }
+
+    .midfielderBox {
+        background-color: #00ccff;
+        padding: 30px;
+        border: 5px solid rgb(25, 245, 227);
+        box-shadow: 5px 7px 10px 1px rgb(73, 10, 189);
+        border-radius: 5px;
+        margin-right: 53px;
+        margin-bottom: 40px;
+        cursor: pointer;
+    }
+
+    .captainBox {
+        background-color: #00ccff;
+        width: 300px;
+        padding-left: 30px;
+        padding-right: 25px;
+        border: 5px solid rgb(25, 245, 227);
+        box-shadow: 5px 7px 10px 1px rgb(73, 10, 189);
+        border-radius: 5px;
+        margin-right: 52px;
+        margin-left: 0px;
+        margin-bottom: 40px;
+        cursor: pointer;
+    }
+
+    .captain { 
+        background-color: rgb(255, 238, 0);
+        width: 40px;
+        margin-left: 190px;
+        border-radius: 100px;
+    }
+
+    .captain-image {
+        width: 220px;
+        height: 220px;
+        margin-top: 0px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 120px;
+        background-color: rgb(72, 4, 180);
+    
+    }
+
+
+    .forwardBox {
+        background-color: #00ccff;;
+        margin: 5px;
+        padding: 30px;
+        border: 5px solid rgb(25, 245, 227);
+        box-shadow: 5px 7px 10px 1px rgb(73, 10, 189);
+        border-radius: 5px;
+        margin-left: 0px;
+        margin-right: 56px;
+        margin-bottom: 40px;
+        cursor: pointer;
+    }
+}
+
+.flex-row { 
+    display: flex;
+    flex-direction: row;
+}
+
+.first {
+    flex-grow: 10;
+}
+.second {
+    flex-grow: 10;
+}
+
+.third {
+    flex-grow: 10;
+}
+  
+.four {
+    flex-grow: 10;
+}
+
+ .card {
+    box-shadow: 0 4px 8px 0 rgba(19, 58, 77, 0.171);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+
+.cardKlub {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 3px;
+    margin-bottom: 48px;
+    padding-bottom: 30px;
+    cursor: pointer;
+}
+
+
+.cardProfile {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 59px;
+    margin-right: 10px;
+    margin-bottom: 35px;
+    padding-bottom: 67px;
+    cursor: pointer;
+}
+
+aside .cardKlub:hover {
+    box-shadow: 0 4px 8px 0 rgb(0, 238, 255);
+}
+
+aside .cardProfile:hover {
+    background-color:gold;
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+ }
+
+div h2 {
+    background-color: rgb(255, 236, 130);
+    max-width: 200px;
+    padding: 5px;
+    text-align: center;
+    overflow: auto;
+}
+
+h2, h3 {
+    color: #00a2c6
+}
+
+    
+h4 { color: rgb(219, 35, 35); }
+
+
+aside {
+    float: right;
+    width: 25%;
+    margin-left: 0px;
+    overflow: auto;
+}
+
+@media screen and (max-width: 1000px) {
+    aside {
+        width: 100%;
+        padding: 0;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 10px;
+    }
+    
+}
+
+h3#IL {
+    background-color: #00a2c6;
+    color: rgb(255, 251, 1);
+    max-width: 315px;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    text-align: center;
+}
+ 
+.tableside {
+    background-color: rgb(24, 29, 31);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-right: 5px;
+    padding-bottom: 20px;
+    border: 4px solid #00a2c6 ;
+}
+
+footer {
+    padding: 20px;
+    color: whitesmoke;
+    background-color: rgb(9, 134, 172);
+    text-align: center;
+    font-weight: bold;
+    float: center;
+    width: 100%;
+    overflow: auto;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .nav2 {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(9, 134, 172);
+        width: 100%;
+        padding: 15px 5px 11px 0;
+        color: whitesmoke;
+        font-size: 20px;
+        position: fixed;
+        overflow: auto;
+        top: 0;
+    }
+
+    .container {
+        display: flex;
+        width: 100%;
+        position: sticky;
+    }
+
+    #menuBars {
+        display: inline-block;
+        width: 17%;
+        margin-top: 10px;
+        margin-left: 20px;
+        font-size: 40px;
+        position: sticky;
+        cursor: pointer;
+    }    
+
+    #textBanner, #textBanner > h3{
+        margin-left: auto;
+        margin-right: auto;
+        color: rgb(28, 255, 255);
+    }
+
+    #logo { 
+        float: right;
+        width: 25%;
+        padding-right: 15px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .logo-nav {
+        float: right;
+        width: 7%;
+        width: 70px;
+        object-fit: contain;
+    }
+
+    #logo-row {        
+        display: flex;   
+        justify-content: space-between;     
+        margin: 10px 15px 70px 10px;
+    }
+
+    span#closeSideNav {
+        font-size: 2.5em;
+    }
+
+    #logo-row img {
+        object-fit: cover;
+        object-position: center;
+        width: 100px;
+        overflow-x: hidden;
+        margin-bottom: 10px;
+    }   
+
+    .sideNav {
+        position: fixed;
+        display: none;
+        height: 100%;
+        background-color: rgb(9, 134, 172);
+        width: 100%;
+        padding: 5px;
+        color: whitesmoke;
+        font-size: 20px;
+        overflow: auto;
+        top: 0;
+    }
+
+    #closeSideNav {
+        font-size: 2em;
+        color: gold;
+        cursor: pointer;
+        display: flex;
+        overflow-x: hidden;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .sideNav ul {
+        overflow-x: hidden;
+        display: inline;
+    }
+
+    #menu {
+        margin-bottom: 30px;
+    }
+
+    .sideNav a {
+        font-size: 30px;
+        font-weight: bolder;
+        text-decoration: none;
+        display: inline;
+    }
+    
+    .sideNav a:link {
+        color: whitesmoke;
+    }
+    
+    .sideNav a:visited {
+        color: whitesmoke;
+    }
+    .sideNav a:hover {
+        color: rgb(255, 222, 132)
+    }
+    
+    .sideNav a:active {
+        color: rgb(255, 196, 161);
+    }
+
+}
